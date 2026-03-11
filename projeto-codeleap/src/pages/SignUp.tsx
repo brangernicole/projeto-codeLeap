@@ -1,7 +1,31 @@
+import { useState } from "react"
+
 export default function SignUp() {
+  const [username, setUsername] = useState('')
   return (
-    <div>
-      <h1>Sign Up</h1>
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="bg-white rounded-2xl border border-gray-300 w-[500px] p-6">
+      <h1 className="text-xl font-bold mb-4">Welcome to CodeLeap network!</h1>
+        <p className="text-sm mb-1">Please enter your username</p>
+          <input 
+          type="text" 
+          placeholder="John Doe" 
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          className="w-[452px] h-[32px] border-[1px] border-[#999999] focus:border-[#777777] outline-none rounded-lg mb-4 px-2"
+          />
+          <button 
+          type="submit"
+          disabled={!username.trim()}
+          className={` w-[111px] h-[32px] rounded-lg float-right text-white flex items-center justify-center ${
+            username.trim()
+              ? 'bg-[#7695EC] cursor-pointer'
+              : 'bg-gray-400 cursor-not-allowed'
+          }`}
+          >
+            ENTER
+          </button>
+    </div>
     </div>
   )
 }
