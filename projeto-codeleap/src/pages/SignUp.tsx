@@ -15,13 +15,13 @@ export default function SignUp() {
           className="w-[452px] h-[32px] border-[1px]  border-[#999999] focus:border-[#777777] outline-none rounded-lg mb-4 px-2 text-[14px]"
           />
           <button 
-          type="submit"
-          disabled={!username.trim()}
-          className={` w-[111px] h-[32px] rounded-lg float-right text-white flex items-center justify-center ${
-            username.trim()
-              ? 'bg-[#7695EC] cursor-pointer'
-              : 'bg-gray-400 cursor-not-allowed'
-          }`}
+            type="submit"
+            disabled={!username.trim()}
+            className={`w-[111px] h-[32px] rounded-lg float-right flex items-center justify-center font-bold ${
+              username.trim()
+                ? 'btn-create text-white cursor-pointer'
+                : 'btn-disabled text-white cursor-not-allowed'
+            }`}
           >
             ENTER
           </button>

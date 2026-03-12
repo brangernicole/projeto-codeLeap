@@ -1,3 +1,4 @@
+
 @import "tailwindcss";
 
 body {
@@ -5,3 +6,64 @@ body {
   background-color: #DDDDDD;
   color: #000000;
 }
+
+.btn-create {
+  background: #7695EC;
+  border: none;
+  color: #fff;
+}
+
+.btn-enter {
+  background: #7695EC;
+  border: none;
+  color: #fff;
+}
+.btn-enter: :hover {
+  background: #5176C8;
+  border: none;
+  color: #fff;
+}
+
+.btn-disabled {
+  background: #BFBFBF;
+  border: none;
+  color: #fff;
+}
+.btn-disabled: hover {
+  background: #8C8C8C;
+  border: none;
+  color: #fff;
+}
+
+.btn-cancel {
+  background: #fff;
+  border: 1px solid #BFBFBF;
+  color: #000;
+}
+.btn-cancel:hover {
+  border: 2px solid #000;
+  color: #000000;
+}
+
+.btn-green {
+  background: #47B960;
+  border: none;
+  color: #fff;
+}
+.btn-green:hover {
+  background: #39944D;
+  border: 2px solid #39944D;
+  color: #fff;
+}
+
+.btn-red {
+  background: #FF5151;
+  border: none;
+  color: #fff;
+}
+.btn-red:hover {
+  background: #d32f2f;
+  border: 2px solid #d32f2f;
+  color: #fff;
+}
+
