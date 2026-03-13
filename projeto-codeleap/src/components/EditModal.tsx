@@ -14,12 +14,12 @@ function EditModal({ open, onClose, onEdit }: EditModalProps) {
           <input 
             type="text"
             placeholder="Hello world"
-            className="w-153 h-8 border border-[#999999] focus:border-[#777777] outline-none rounded-lg mb-8 px-2 text-[14px]" 
+            className="w-153 h-8 border border-[#999999] outline-none rounded-lg mb-8 px-2 text-[14px]" 
           />
           <p className="text-[16px] text-left mb-1">Content</p>
           <textarea
             placeholder="Content here"
-            className="w-153 h-18.5 border border-[#999999] focus:border-[#777777] outline-none rounded-lg mb-6 px-3 py-2 text-[14px] resize-none placeholder:text-[#CCCCCC]"
+            className="w-153 h-18.5 border border-[#999999] outline-none rounded-lg mb-6 px-3 py-2 text-[14px] resize-none placeholder:text-[#CCCCCC]"
           />
           <div className="flex justify-end gap-4">
             <button className="btn-cancel rounded-lg w-30 h-8 text-[16px] font-bold" onClick={onClose}>Cancel</button>

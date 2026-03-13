@@ -22,14 +22,14 @@ export default function Main() {
               value={title}
               onChange={(e) => setTitle(e.target.value)}
               placeholder="Hello world"
-              className="w-[704px] h-[32px] border-[1px]  border-[#999999] focus:border-[#777777] outline-none rounded-lg mb-6 px-2 text-[14px]"
+              className="w-[704px] h-[32px] border-[1px] border-[#999999] outline-none rounded-lg mb-6 px-2 text-[14px]"
             />
             <p>Content</p>
             <textarea
               value={content}
               onChange={(e) => setContent(e.target.value)}
               placeholder="Content here"
-              className="w-[704px] h-[74px] border-[1px] border-[#999999] focus:border-[#777777] outline-none rounded-lg mb-6 px-2 py-2 text-[14px] resize-none"
+              className="w-[704px] h-[74px] border-[1px] border-[#999999] outline-none rounded-lg mb-6 px-2 py-2 text-[14px] resize-none"
             />
             <button
               type="submit"
