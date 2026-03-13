@@ -1,7 +1,16 @@
+import { useNavigate } from "react-router-dom";
 import { useState } from "react"
 
 export default function SignUp() {
   const [username, setUsername] = useState('')
+  const navigate = useNavigate();
+
+function handleSubmit(e) {
+  e.preventDefault();
+  setTimeout(() => {
+    navigate("/main");
+  }, 100); 
+}
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="bg-white rounded-2xl border border-gray-300 w-[500px] p-6">
@@ -14,6 +23,7 @@ export default function SignUp() {
           onChange={(e) => setUsername(e.target.value)}
           className="w-[452px] h-[32px] border-[1px] border-[#999999] outline-none rounded-lg mb-4 px-2 text-[14px]"
           />
+          <form onSubmit={handleSubmit}>
           <button 
             type="submit"
             disabled={!username.trim()}
@@ -25,6 +35,7 @@ export default function SignUp() {
           >
             ENTER
           </button>
+          </form>
     </div>
     </div>
   )
