@@ -11,8 +11,18 @@ function DeleteModal({ open, onClose, onDelete }: DeleteModalProps) {
       <div className="bg-white rounded-2xl w-[660px] h-[146px] p-6 flex flex-col justify-between">
           <h2 className="text-xl font-bold mb-4">Are you sure you want to delete this item?</h2>
           <div className="flex justify-end gap-4">
-            <button className="btn-cancel rounded-lg w-30 h-8 text-[16px] font-bold" onClick={onClose}>Cancel</button>
-            <button className="btn-red rounded-lg w-30 h-8 text-[16px] font-bold" onClick={onDelete}>Delete</button>
+            <button
+              className="rounded-lg w-30 h-8 text-[16px] font-bold bg-white border border-gray-300 text-black hover:border-black hover:text-black transition-colors"
+              onClick={onClose}
+            >
+              Cancel
+            </button>
+            <button
+              className="rounded-lg w-30 h-8 text-[16px] font-bold bg-red-500 text-white hover:bg-red-600 transition-colors"
+              onClick={onDelete}
+            >
+              Delete
+            </button>
         </div>
       </div>
     </div>

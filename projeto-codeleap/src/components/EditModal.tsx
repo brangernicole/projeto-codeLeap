@@ -14,16 +14,26 @@ function EditModal({ open, onClose, onEdit }: EditModalProps) {
           <input 
             type="text"
             placeholder="Hello world"
-            className="w-full h-8 border border-[#999999] outline-none rounded-lg mb-8 px-2 text-[14px]" 
+            className="w-full h-8 border border-[#999999] rounded-lg mb-8 px-2 text-[14px] focus:border-gray-500 focus:outline-none" 
           />
           <p className="text-[16px] text-left mb-1">Content</p>
           <textarea
             placeholder="Content here"
-            className="w-full h-18.5 border border-[#999999] outline-none rounded-lg mb-6 px-3 py-2 text-[14px] resize-none placeholder:text-[#CCCCCC]"
+            className="w-full h-18.5 border border-[#999999] rounded-lg mb-6 px-3 py-2 text-[14px] resize-none placeholder:text-[#CCCCCC] focus:border-gray-500 focus:outline-none"
           />
           <div className="flex justify-end gap-4">
-            <button className="btn-cancel rounded-lg px-6 h-8 text-[16px] font-bold" onClick={onClose}>Cancel</button>
-            <button className="btn-green rounded-lg px-6 h-8 text-[16px] font-bold" onClick={onEdit}>Save</button>
+            <button
+              className="rounded-lg px-6 h-8 text-[16px] font-bold bg-white border border-gray-300 text-black hover:border-black hover:text-black transition-colors"
+              onClick={onClose}
+            >
+              Cancel
+            </button>
+            <button
+              className="rounded-lg px-6 h-8 text-[16px] font-bold bg-green-500 text-white hover:bg-green-600 transition-colors"
+              onClick={onEdit}
+            >
+              Save
+            </button>
           </div>
       </div>
     </div>
