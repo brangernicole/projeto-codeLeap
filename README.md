@@ -1,28 +1,27 @@
-
 # CodeLeap Network
 
-Projeto desenvolvido com React, TypeScript e Vite, simulando uma rede social simples onde usuários podem criar, editar e deletar posts. A interface é totalmente responsiva, adaptando-se para dispositivos mobile, e conta com efeitos de hover para melhorar a experiência do usuário.
+Project developed with React, TypeScript, and Vite, simulating a simple social network where users can create, edit, and delete posts. The interface is fully responsive, adapting to mobile devices, and features hover effects to enhance user experience.
 
-## Funcionalidades
+## Features
 
-- **Cadastro de usuário:** Tela inicial para inserir o nome de usuário.
-- **Página principal:** Exibe posts, permite criar novos posts com título e conteúdo.
-- **CRUD de posts:** 
-  - Criar post
-  - Editar post (modal)
-  - Deletar post (modal)
-- **Interface responsiva e moderna:** Utilizando TailwindCSS.
-- **Fluxo de navegação:** React Router DOM.
+- **User registration:** Initial screen to enter the username.
+- **Main page:** Displays posts and allows creating new posts with title and content.
+- **Posts CRUD:**
+  - Create post
+  - Edit post (modal)
+  - Delete post (modal)
+- **Modern and responsive interface:** Using TailwindCSS.
+- **Navigation flow:** React Router DOM.
 
-## Estrutura do Projeto
+## Project Structure
 
-- `src/pages/SignUp.tsx`: Tela de cadastro de usuário.
-- `src/pages/Home.tsx`: Página principal com feed de posts e formulário para criar post.
-- `src/components/EditModal.tsx`: Modal para editar posts.
-- `src/components/DeleteModal.tsx`: Modal para deletar posts.
-- `src/assets/icons/`: Ícones para ações de editar e deletar.
+- `src/pages/SignUp.tsx`: User registration screen.
+- `src/pages/Home.tsx`: Main page with post feed and form to create posts.
+- `src/components/EditModal.tsx`: Modal to edit posts.
+- `src/components/DeleteModal.tsx`: Modal to delete posts.
+- `src/assets/icons/`: Icons for edit and delete actions.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 - React 19
 - TypeScript
@@ -30,29 +29,31 @@ Projeto desenvolvido com React, TypeScript e Vite, simulando uma rede social sim
 - TailwindCSS
 - React Router DOM
 - ESLint
+- React Hooks (useState)
+- React Router DOM (useNavigate)
 
-## Como rodar o projeto
+## How to run the project
 
-1. Instale as dependências:
+1. Install dependencies:
    ```
    npm install
    ```
-2. Rode o servidor de desenvolvimento:
+2. Start the development server:
    ```
    npm run dev
    ```
-3. Acesse [http://localhost:5173](http://localhost:5173) no navegador.
+3. Access [http://localhost:5173](http://localhost:5173) in your browser.
 
-## Scripts disponíveis
+## Available Scripts
 
-- `npm run dev`: Inicia o servidor de desenvolvimento.
-- `npm run build`: Gera o build de produção.
-- `npm run preview`: Visualiza o build.
-- `npm run lint`: Executa o lint.
+- `npm run dev`: Starts the development server.
+- `npm run build`: Generates the production build.
+- `npm run preview`: Previews the build.
+- `npm run lint`: Runs lint.
 
-## Diferenciais
+## Highlights
 
-- Modais para edição e exclusão de posts.
-- Validação de campos para criação e edição.
-- UI clean e responsiva, adaptada para mobile.
-- Efeitos de hover nas ações e elementos interativos.
+- Modals for editing and deleting posts.
+- Field validation for creation and editing.
+- Clean and responsive UI, adapted for mobile.
+- Hover effects on actions and interactive elements.
