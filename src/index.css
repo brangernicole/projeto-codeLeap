@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@theme {
+
+  /* custom widths */
+  --width-modal: 660px;
+  --width-buttons: 111px;
+  --width-signup-card : 500px;
+  --width-modal-edit: 612px;
+
+
+  /* custom heights */
+  --height-delete-modal: 146px;
+  --height-edit: 334px;
+  --height-content: 74px;
+  --height-post: 70px;
+  --height-signup-card: 205px;
+
+
+  /* custom colors */
+  --color-primary: #7695EC;
+  --color-placeholder: #999999;
+  --color-hover: #5176C8;
+  --color-background-modal: #777777CC;
+
+
+}

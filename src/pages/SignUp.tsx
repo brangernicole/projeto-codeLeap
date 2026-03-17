@@ -8,13 +8,13 @@ export default function SignUp() {
   function handleSubmit(e) {
     e.preventDefault();
     setTimeout(() => {
-      navigate("/main");
+      navigate("/Home");
     }, 100);
   }
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 bg-gray-100">
-      <div className="bg-white rounded-2xl border border-gray-300 w-full max-w-[500px] p-4 sm:p-6">
+      <div className="bg-white rounded-2xl border border-gray-300 w-signup-card min-h-signup-card p-4 sm:p-6">
 
         <h1 className="text-xl font-bold mb-4">
           Welcome to CodeLeap network!
@@ -33,7 +33,7 @@ export default function SignUp() {
     <button
       type="submit"
       disabled={!username.trim()}
-      className={`w-full max-w-[111px] h-8 rounded-lg flex items-center justify-center font-bold text-white ${
+      className={`w-buttons max-w-buttons h-8 rounded-lg flex items-center justify-center font-bold text-white ${
         username.trim()
           ? "bg-blue-400 hover:bg-blue-500 cursor-pointer"
           : "bg-gray-400 hover:bg-gray-500 cursor-not-allowed"
