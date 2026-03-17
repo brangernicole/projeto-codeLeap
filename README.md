@@ -1,7 +1,7 @@
 
 # CodeLeap Network
 
-Projeto desenvolvido com React, TypeScript e Vite, simulando uma rede social simples onde usuários podem criar, editar e deletar posts.
+Projeto desenvolvido com React, TypeScript e Vite, simulando uma rede social simples onde usuários podem criar, editar e deletar posts. A interface é totalmente responsiva, adaptando-se para dispositivos mobile, e conta com efeitos de hover para melhorar a experiência do usuário.
 
 ## Funcionalidades
 
@@ -54,4 +54,5 @@ Projeto desenvolvido com React, TypeScript e Vite, simulando uma rede social sim
 
 - Modais para edição e exclusão de posts.
 - Validação de campos para criação e edição.
-- UI clean e responsiva.
+- UI clean e responsiva, adaptada para mobile.
+- Efeitos de hover nas ações e elementos interativos.
