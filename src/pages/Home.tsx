@@ -81,14 +81,14 @@ export default function Home() {
               <div className="flex items-center gap-3 flex-shrink: 0">
 
                 <img
-                  src="/src/assets/icons/delete.svg"
+                  src="/assets/icons/delete.svg"
                   alt="delete"
                   className="w-5 h-5 cursor-pointer"
                   onClick={() => setDeleteOpen(true)}
                 />
 
                 <img
-                  src="/src/assets/icons/edit.svg"
+                  src="/assets/icons/edit.svg"
                   alt="edit"
                   className="w-5 h-5 cursor-pointer"
                   onClick={() => setEditOpen(true)}
