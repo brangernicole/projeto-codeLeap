@@ -42,7 +42,7 @@ Project developed with React, TypeScript, and Vite, simulating a simple social n
    ```
    npm run dev
    ```
-3. Access [http://localhost:5173](http://localhost:5173) in your browser.
+3. Access (http://localhost:5173) in your browser.
 
 ## Available Scripts
 
@@ -57,3 +57,9 @@ Project developed with React, TypeScript, and Vite, simulating a simple social n
 - Field validation for creation and editing.
 - Clean and responsive UI, adapted for mobile.
 - Hover effects on actions and interactive elements.
+
+## Deploy
+
+This project is hosted on Vercel: (https://projeto-code-leap.vercel.app/)
+
+Deployment is automatic for every push to the main branch.
