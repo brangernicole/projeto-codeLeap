@@ -10,6 +10,11 @@ export default function Home() {
   const titleIsFilled = title.trim()
   const contentIsFilled = content.trim()
 
+  function handleCreate() {
+    setTitle("");
+    setContent("");
+  }
+
   return (
     <div className="min-h-screen flex justify-center px-4 bg-gray-100">
       <div className="bg-white border border-gray-300 w-full  max-w-200">
@@ -49,13 +54,14 @@ export default function Home() {
 
             <div className="flex justify-end">
               <button
-                type="submit"
+                type="button"
                 className={`w-buttons h-8 rounded-lg text-white flex items-center justify-center font-bold ${
                  titleIsFilled && contentIsFilled
                     ? "bg-primary hover:bg-hover cursor-pointer"
                     : "bg-gray-400 cursor-not-allowed"
                 }`}
-                
+                onClick={handleCreate}
+                disabled={!(titleIsFilled && contentIsFilled)}
               >
                 Create
               </button>

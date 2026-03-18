@@ -5,7 +5,7 @@ export default function SignUp() {
   const [username, setUsername] = useState("");
   const navigate = useNavigate();
 
-  function handleSubmit(e) {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setTimeout(() => {
       navigate("/Home");

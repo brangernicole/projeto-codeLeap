@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 type EditModalProps = {
   open: boolean;
@@ -9,6 +9,13 @@ type EditModalProps = {
 function EditModal({ open, onClose, onEdit }: EditModalProps) {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+
+   useEffect(() => {
+    if (open) {
+      setTitle("");
+      setContent("");
+    }
+  }, [open]);
 
   const canSave = title.trim() && content.trim();
   if (!open) return null;
